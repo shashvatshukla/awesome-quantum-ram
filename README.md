@@ -18,20 +18,30 @@ Feel free to create pull requests with suggestions. Accompanying descriptions to
 
 Quantum Random Access Memory. Vittorio Giovannetti, Seth Lloyd, and Lorenzo Maccone. 2008. PRL. 4 pages. 
 
-Defines QRAM. Presents the standard fanout architecture for RAM and proposes the bucket-brigade architecture for RAM and QRAM. The bucket-brigade architecture exponentially reduces the number of two-qubit interactions between "active" (not wait state) states, and so are advantageous for error models where only "active" states experience noise. A photonic implementation is discussed. 
+Defines QRAM. Presents the standard fanout architecture for RAM and proposes the bucket-brigade architecture for RAM and QRAM. The bucket-brigade architecture exponentially reduces (from linear in N, the memory size, to polylog in N) the number of two-qubit interactions between "active" (not wait state) states, and so are advantageous for error models where only "active" states experience noise. A photonic implementation is discussed. 
 * [Longer QRAM paper shortly after original](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.100.160501)
 
 Architectures for a quantum random access memory. Vittorio Giovannetti, Seth Lloyd, and Lorenzo Maccone. 2008. PRA. 9 pages. 
 
-This paper covers the same scope in more detail as the one above.
-
-* [Circuit-based QRAM for Classical Data](https://www.nature.com/articles/s41598-019-40439-3.pdf)
-
-* [Hardware-Efficient Quantum Random Access Memory with Hybrid Quantum Acoustic Systems](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.250501)
+This paper covers the same topics in more detail as the one above.
 
 * [On the robustness of bucket brigade quantum RAM](https://arxiv.org/abs/1502.03450)
 
+On the robustness of bucket brigade quantum RAM. Arunachalam et al. 2015. New Journal of Physics. 13 pages.
+
+Points out a distinction between algorithms that take polylog (in N, memory size) queries to the data and those that take polynomial queries (in N) , e.g. Grover's Search that takes $\mathcal{O}(\sqrt{N})$ queries. Error correction may not be required in the former case. The paper focusses on the latter case. 
+Argues that using quantum error correction causes the bucket-brigade architecture to lose its primary advantage of a small number of “active” gates, since
+all components have to be actively error corrected.
+Appeals to the work of Regev and Schiff on faulty oracles (which destroy Grover's search) and shows that QRAM acts as a faulty oracle in this sense. 
+
+* [Hardware-Efficient Quantum Random Access Memory with Hybrid Quantum Acoustic Systems](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.250501)
+
 * [Systems Architecture for Quantum Random Access Memory](https://arxiv.org/abs/2306.03242)
+
+* [Circuit-based QRAM for Classical Data](https://www.nature.com/articles/s41598-019-40439-3.pdf)
+
+
+
 
 ## Theses
 
