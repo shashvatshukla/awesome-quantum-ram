@@ -64,3 +64,6 @@ Contains complete example circuits for QRAM architectures. Analyses the noise-re
 * [Optimistic blog post on QRAM](http://nisqybusiness.com/2019/08/05/on-qram/)
 
 On QRAM. Joe Fitzsimons. 2019. Nisqy Business (Blog). 5 min read.
+
+* [QRAM in Nature News and Views](https://www.nature.com/articles/468044a)
+
