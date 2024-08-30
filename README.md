@@ -40,8 +40,7 @@ Appeals to the work of Regev and Schiff on faulty oracles (which destroy Grover'
 
 * [Circuit-based QRAM for Classical Data](https://www.nature.com/articles/s41598-019-40439-3.pdf)
 
-
-
+* [Fault tolerant resource estimation of quantum random-access memories](https://arxiv.org/abs/1902.01329)
 
 ## Theses
 
