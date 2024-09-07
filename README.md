@@ -12,6 +12,9 @@ Feel free to create pull requests with suggestions. Accompanying descriptions to
 
 * [QRAM: A Survey and Critique](https://arxiv.org/abs/2305.10310)
 
+* [Quantum Memory: A Missing Piece in Quantum Computing Units](https://arxiv.org/abs/2309.14432)
+
+
 ## Papers
 
 * [Original QRAM paper](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.100.160501)
@@ -34,13 +37,68 @@ Argues that using quantum error correction causes the bucket-brigade architectur
 all components have to be actively error corrected.
 Appeals to the work of Regev and Schiff on faulty oracles (which destroy Grover's search) and shows that QRAM acts as a faulty oracle in this sense. 
 
-* [Hardware-Efficient Quantum Random Access Memory with Hybrid Quantum Acoustic Systems](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.250501)
+* [Resilience of QRAM to Generic Noise](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.020311)
 
-* [Systems Architecture for Quantum Random Access Memory](https://arxiv.org/abs/2306.03242)
+* [Systems Architecture for QRAM](https://arxiv.org/abs/2306.03242)
 
 * [Circuit-based QRAM for Classical Data](https://www.nature.com/articles/s41598-019-40439-3.pdf)
 
 * [Fault tolerant resource estimation of quantum random-access memories](https://arxiv.org/abs/1902.01329)
+
+* [A novel efficient QRAM](https://ieeexplore.ieee.org/abstract/document/9568972)
+
+* [Optimal usage of QRAM in quantum machine learning](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.012326)
+
+* [Memory Compression with Quantum Random-Access Gates](https://arxiv.org/abs/2203.05599)
+
+* [QRAM via Quantum Walk](https://iopscience.iop.org/article/10.1088/2058-9565/abf484/meta)
+
+* [Circuit-Based QRAM for Classical Data With Continuous Amplitudes](https://ieeexplore.ieee.org/abstract/document/9259210?casa_token=AVb77tRfT10AAAAA:tA5yZRDX5KSQ37OSY6rigKJPoSwuqxfOjpCdr0KzyYdB568lKck1ekJNqlvhE7jdJpBklonI)
+
+* [Data centers with QRAM and quantum networks](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.108.032610)
+
+* [Robust QRAM](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.010306)
+
+* [Parallelizing the queries in a bucket-brigade QRAM](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.102.032608)
+
+* [Quantum random access stored-program machines](https://www.sciencedirect.com/science/article/pii/S0022000022000599?casa_token=n_iI1fZUfTsAAAAA:ACv-YAhH5hHLYX81nxDkOlID3QVS2XxZtABd4FpBwp6JG2EogFclVAqdK0trGuKamVKBt4A34Q)
+
+* [Compact and classically preprocessed data-loading quantum circuit as a quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.012616)
+
+* [Fundamental causal bounds of quantum random access memories](https://www.nature.com/articles/s41534-024-00848-3)
+
+* [Two-level quantum walkers on directed graphs. II. Application to quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.107.022416)
+
+* [Efficient and Error-Resilient Data Access Protocols for a Limited-Sized Quantum Random Access Memory](https://arxiv.org/abs/2303.05207)
+
+* [A QRAM using a polynomial encoding of binary strings](https://arxiv.org/abs/2408.16794)
+
+* [Trainable PQC-Based QRAM for Quantum Storage](https://ieeexplore.ieee.org/abstract/document/10130283)
+
+* [Resource-efficient simulation of noisy quantum circuits and application to network-enabled QRAM optimization](https://www.nature.com/articles/s41534-023-00773-x)
+
+## Hardware 
+
+* [Hardware-Efficient QRAM with Hybrid Quantum Acoustic Systems](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.250501)
+
+* [Scalable and High-Fidelity Quantum Random Access Memory in Spin-Photon Networks](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.030319)
+
+* [Rapid single flux QRAM](https://ieeexplore.ieee.org/abstract/document/403223?casa_token=nYXXUrQvaTwAAAAA:DIXlyXH0ajSuDimAgos3vZf1sFej-SR-Ng4wzJO-VUpGxHI2OhLRlpb4vHQL6I10Zr0TyLuN)
+
+* [Quantum Random Access Memory Architectures Using 3D Superconducting Cavities](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.012616)
+
+* [Ultrafast Quantum Random Access Memory Utilizing Single Rydberg Atoms in a Bose-Einstein Condensate](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.240504)
+
+* [Random-Access Quantum Memory Using Chirped Pulse Phase Encoding](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.12.041014)
+
+* [Photon echo quantum random access memory integration in a quantum computer](https://iopscience.iop.org/article/10.1088/0953-4075/45/12/124017/meta?casa_token=pVP5CpfQc6sAAAAA:fZUdixyOgvIOrd_VzxsW3O-ouFuaW9rRlYUvqoGS5aVRPUmONhRxTsxBOe3I1HRi7kYWmf8ZtMqJAW6Tm8Zd96mfPqY)
+
+* [Experimental realization of 105-qubit random access quantum memory](https://www.nature.com/articles/s41534-019-0144-0)
+
+
+## Algorithms using QRAM
+
+* [Quantum algorithm for finding minimum values in a Quantum Random Access Memory](https://arxiv.org/abs/2301.05122)
 
 ## Theses
 
@@ -65,4 +123,8 @@ Contains complete example circuits for QRAM architectures. Analyses the noise-re
 On QRAM. Joe Fitzsimons. 2019. Nisqy Business (Blog). 5 min read.
 
 * [QRAM in Nature News and Views](https://www.nature.com/articles/468044a)
+
+* [Chirping toward a Quantum RAM](https://physics.aps.org/articles/v15/168)
+
+* [QRAM student project](https://www.cs.umd.edu/class/fall2019/cmsc657/projects/group_11.pdf)
 
