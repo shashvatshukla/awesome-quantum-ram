@@ -85,6 +85,8 @@ Appeals to the work of Regev and Schiff on faulty oracles (which destroy Grover'
 
 * [Novel oracle constructions for quantum random access memory](https://arxiv.org/abs/2405.20225)
 
+* [Small quantum computers and large classical data sets](https://arxiv.org/abs/2004.00026)
+
 ## Hardware 
 
 * [Hardware-Efficient QRAM with Hybrid Quantum Acoustic Systems](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.250501)
@@ -147,3 +149,6 @@ On QRAM. Joe Fitzsimons. 2019. Nisqy Business (Blog). 5 min read.
 
 * [QRAM student project](https://www.cs.umd.edu/class/fall2019/cmsc657/projects/group_11.pdf)
 
+* [QRAM in nlab](https://ncatlab.org/nlab/show/QRAM)
+
+* 
