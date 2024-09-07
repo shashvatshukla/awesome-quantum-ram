@@ -14,6 +14,8 @@ Feel free to create pull requests with suggestions. Accompanying descriptions to
 
 * [Quantum Memory: A Missing Piece in Quantum Computing Units](https://arxiv.org/abs/2309.14432)
 
+* [Quantum Data Center: Perspectives](https://arxiv.org/abs/2309.06641)
+
 
 ## Papers
 
@@ -77,6 +79,12 @@ Appeals to the work of Regev and Schiff on faulty oracles (which destroy Grover'
 
 * [Resource-efficient simulation of noisy quantum circuits and application to network-enabled QRAM optimization](https://www.nature.com/articles/s41534-023-00773-x)
 
+* [Multi-qubit time-bin quantum RAM](https://arxiv.org/abs/1412.2459)
+
+* [Ultrafast quantum random access memory utilizing single Rydberg atoms in a Bose-Einstein condensate](https://arxiv.org/abs/1307.0963)
+
+* [Novel oracle constructions for quantum random access memory](https://arxiv.org/abs/2405.20225)
+
 ## Hardware 
 
 * [Hardware-Efficient QRAM with Hybrid Quantum Acoustic Systems](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.250501)
@@ -95,10 +103,21 @@ Appeals to the work of Regev and Schiff on faulty oracles (which destroy Grover'
 
 * [Experimental realization of 105-qubit random access quantum memory](https://www.nature.com/articles/s41534-019-0144-0)
 
+* [Error-Mitigated Quantum Random Access Memory](https://arxiv.org/abs/2403.06340)
+
+* [Maximizing the Yield of Bucket Brigade Quantum Random Access Memory using Redundancy Repair](https://arxiv.org/abs/2312.17483)
+
+* [Quantum random access memory architectures using superconducting cavities](https://arxiv.org/abs/2310.08288)
+
+
 
 ## Algorithms using QRAM
 
 * [Quantum algorithm for finding minimum values in a Quantum Random Access Memory](https://arxiv.org/abs/2301.05122)
+
+* [Quantum Linear Algorithm for Edit Distance Using the Word QRAM Model](https://arxiv.org/abs/2112.13005)
+
+* [Improved Classical and Quantum Algorithms for the Shortest Vector Problem via Bounded Distance Decoding](https://arxiv.org/abs/2002.07955)
 
 ## Theses
 
