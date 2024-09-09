@@ -43,6 +43,16 @@ Appeals to the work of Regev and Schiff on faulty oracles (which destroy Grover'
 
 * [Systems Architecture for QRAM](https://arxiv.org/abs/2306.03242)
 
+* [QRAM via Quantum Walk](https://iopscience.iop.org/article/10.1088/2058-9565/abf484/meta)
+
+Quantum random access memory via quantum walk. Asaka et al. 2021. Quantum Sci Tech. 9 pages. 
+
+Proposes a QRAM scheme which does not use a tree of quantum routers, switches or any kind of quantum device on the nodes of the tree. Rather, it is described in terms of classical logic done coherently on a register. A physical implementation is proposed in terms of dual-rail qubits (particles travelling along one of two paths). 
+(Note that this is not a quantum walk in the sense that a variant of Grover's algorithm or Amplitude Amplification is applied. Rather, the mathematical structure of how the intermediate steps of the addressing scheme work can be modelled as a walk - but so can any classical computation. I would advise not paying too much attention to the word "walk" as it confused me during my first read.)
+More details of the implementation are provided in the next paper. 
+
+* [Two-level quantum walkers on directed graphs. II. Application to quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.107.022416)
+
 * [Circuit-based QRAM for Classical Data](https://www.nature.com/articles/s41598-019-40439-3.pdf)
 
 * [Fault tolerant resource estimation of quantum random-access memories](https://arxiv.org/abs/1902.01329)
@@ -52,8 +62,6 @@ Appeals to the work of Regev and Schiff on faulty oracles (which destroy Grover'
 * [Optimal usage of QRAM in quantum machine learning](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.012326)
 
 * [Memory Compression with Quantum Random-Access Gates](https://arxiv.org/abs/2203.05599)
-
-* [QRAM via Quantum Walk](https://iopscience.iop.org/article/10.1088/2058-9565/abf484/meta)
 
 * [Circuit-Based QRAM for Classical Data With Continuous Amplitudes](https://ieeexplore.ieee.org/abstract/document/9259210?casa_token=AVb77tRfT10AAAAA:tA5yZRDX5KSQ37OSY6rigKJPoSwuqxfOjpCdr0KzyYdB568lKck1ekJNqlvhE7jdJpBklonI)
 
@@ -68,8 +76,6 @@ Appeals to the work of Regev and Schiff on faulty oracles (which destroy Grover'
 * [Compact and classically preprocessed data-loading quantum circuit as a quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.012616)
 
 * [Fundamental causal bounds of quantum random access memories](https://www.nature.com/articles/s41534-024-00848-3)
-
-* [Two-level quantum walkers on directed graphs. II. Application to quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.107.022416)
 
 * [Efficient and Error-Resilient Data Access Protocols for a Limited-Sized Quantum Random Access Memory](https://arxiv.org/abs/2303.05207)
 
