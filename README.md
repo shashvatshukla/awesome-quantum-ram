@@ -15,6 +15,13 @@ Feel free to create pull requests with suggestions. Accompanying descriptions to
 
 * [Quantum Data Center: Perspectives](https://arxiv.org/abs/2309.06641)
 
+## Theses
+
+* [Practicality of QRAM PhD Thesis](https://elischolar.library.yale.edu/gsas_dissertations/346/)
+
+Practicality of Quantum Random Access Memory. Connor Hann. 2021. 253 pages. 
+
+Contains complete example circuits for QRAM architectures. Analyses the noise-resilience of bucket-brigade QRAM in a setting where the components experience noise even in the "wait" state and finds that due to limited entanglement between components the infidelity only scales poly-logarithmically with the memory size. Proposes a hardware-efficient error suppression scheme not relying on quantum error correction, but as a result it can at most quadratically improve the error probability. Proposes experimental implementations of QRAM for hybrid quantum acoustic systems.
 
 ## Curated Papers
 
@@ -51,8 +58,6 @@ Proposes a QRAM scheme which does not use a tree of quantum routers, switches or
 More details of the implementation are provided in the next paper. 
 
 * [Two-level quantum walkers on directed graphs. II. Application to quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.107.022416)
-
-* [Circuit-based QRAM for Classical Data](https://www.nature.com/articles/s41598-019-40439-3.pdf)
 
 * [Fault tolerant resource estimation of quantum random-access memories](https://arxiv.org/abs/1902.01329)
 
@@ -122,14 +127,6 @@ More details of the implementation are provided in the next paper.
 
 * [Improved Classical and Quantum Algorithms for the Shortest Vector Problem via Bounded Distance Decoding](https://arxiv.org/abs/2002.07955)
 
-## Theses
-
-* [Practicality of QRAM PhD Thesis](https://elischolar.library.yale.edu/gsas_dissertations/346/)
-
-Practicality of Quantum Random Access Memory. Connor Hann. 2021. 253 pages. 
-
-Contains complete example circuits for QRAM architectures. Analyses the noise-resilience of bucket-brigade QRAM in a setting where the components experience noise even in the "wait" state and finds that due to limited entanglement between components the infidelity only scales poly-logarithmically with the memory size. Proposes a hardware-efficient error suppression scheme not relying on quantum error correction, but as a result it can at most quadratically improve the error probability. Proposes experimental implementations of QRAM for hybrid quantum acoustic systems.
-
 ## Talks
 
 * [The resilience of quantum random access memory to generic noise (Connor Hann, March Meeting 2020)](https://www.youtube.com/watch?v=mz3DdS-HLdM)
@@ -138,7 +135,7 @@ Contains complete example circuits for QRAM architectures. Analyses the noise-re
 
 * [QRAM A Survey and Critique](https://www.youtube.com/watch?v=Wm2dowNOek4)
 
-## Other
+## Miscellany
 
 * [Optimistic blog post on QRAM](http://nisqybusiness.com/2019/08/05/on-qram/)
 
@@ -158,3 +155,7 @@ On QRAM. Joe Fitzsimons. 2019. Nisqy Business (Blog). 5 min read.
 
 Presents a QRAM-like circuit whose action is like reading just one memory cell of a QRAM. The circuit requires the data and address being read from to be explicitly stored in a quantum register. One merit of this technique is that it can load arbitrary quantum states, not just classical data.
 Since the circuit loads one memory item, N iterations of it can be used to load all the data which might be useful in some settings, but is not usually what we want from a QRAM. 
+
+* [Circuit-based QRAM for Classical Data](https://www.nature.com/articles/s41598-019-40439-3.pdf)
+
+Quantum state preparation circuit that uses controlled rotation on an ancilla qubit and post-selection to get the right amplitudes. Presents a technique ("quantum forking") to compute the inner product of two states $U_1\ket{\psi}$ and $U_2\ket{\psi}$ given access to only one copy of $\ket{\psi}$.
