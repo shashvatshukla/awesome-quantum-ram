@@ -3,7 +3,6 @@ A list of awesome resources about Quantum Random Access Memory.
 
 Feel free to create pull requests with suggestions. Accompanying descriptions to each list item are preferred. 
 
-
 # List
 
 ## Reviews, overviews and surveys
@@ -17,7 +16,7 @@ Feel free to create pull requests with suggestions. Accompanying descriptions to
 * [Quantum Data Center: Perspectives](https://arxiv.org/abs/2309.06641)
 
 
-## Papers
+## Curated Papers
 
 * [Original QRAM paper](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.100.160501)
 
@@ -56,8 +55,6 @@ More details of the implementation are provided in the next paper.
 * [Circuit-based QRAM for Classical Data](https://www.nature.com/articles/s41598-019-40439-3.pdf)
 
 * [Fault tolerant resource estimation of quantum random-access memories](https://arxiv.org/abs/1902.01329)
-
-* [A novel efficient QRAM](https://ieeexplore.ieee.org/abstract/document/9568972)
 
 * [Optimal usage of QRAM in quantum machine learning](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.012326)
 
@@ -117,8 +114,6 @@ More details of the implementation are provided in the next paper.
 
 * [Quantum random access memory architectures using superconducting cavities](https://arxiv.org/abs/2310.08288)
 
-
-
 ## Algorithms using QRAM
 
 * [Quantum algorithm for finding minimum values in a Quantum Random Access Memory](https://arxiv.org/abs/2301.05122)
@@ -157,4 +152,9 @@ On QRAM. Joe Fitzsimons. 2019. Nisqy Business (Blog). 5 min read.
 
 * [QRAM in nlab](https://ncatlab.org/nlab/show/QRAM)
 
-* 
+## Other papers
+
+* [A novel efficient QRAM](https://ieeexplore.ieee.org/abstract/document/9568972)
+
+Presents a QRAM-like circuit whose action is like reading just one memory cell of a QRAM. The circuit requires the data and address being read from to be explicitly stored in a quantum register. One merit of this technique is that it can load arbitrary quantum states, not just classical data.
+Since the circuit loads one memory item, N iterations of it can be used to load all the data which might be useful in some settings, but is not usually what we want from a QRAM. 
