@@ -89,8 +89,6 @@ More details of the implementation are provided in the next paper.
 
 * [Multi-qubit time-bin quantum RAM](https://arxiv.org/abs/1412.2459)
 
-* [Ultrafast quantum random access memory utilizing single Rydberg atoms in a Bose-Einstein condensate](https://arxiv.org/abs/1307.0963)
-
 * [Novel oracle constructions for quantum random access memory](https://arxiv.org/abs/2405.20225)
 
 * [Small quantum computers and large classical data sets](https://arxiv.org/abs/2004.00026)
