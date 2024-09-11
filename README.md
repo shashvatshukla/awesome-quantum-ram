@@ -59,6 +59,12 @@ More details of the implementation are provided in the next paper.
 
 * [Two-level quantum walkers on directed graphs. II. Application to quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.107.022416)
 
+* [A QRAM using a polynomial encoding of binary strings](https://arxiv.org/abs/2408.16794)
+
+A quantum random access memory (QRAM) using a polynomial encoding of binary strings. Priyanka Mukhopadhyay. 2024. arXiv preprint.
+
+Presents a QRAM architecture in which the input address is first converted to a one-hot encoding using a fast $\mathcal{O}(\log \log N)$ T-depth circuit and then the memory can be read out by controlling on each qubit of this one-hot encoded register. The language of polynomials in this paper formalises this one-hot encoding idea. A quantum lookup table (aka QROM) idea is presented. The key differences are that the QROM circuit is not easily reconfigured when the stored memory is changed but rather has to be recompiled, and that it requires less space than a full QRAM. The way this quantum lookup table is implemented is by combining two of the polynomial QRAM architectures, with a hardcoded internal logic circuit. The first QRAM loads one of $\sqrt{N}$ chunks of data, each of $\sqrt{N}$ items and this split results in an $\mathcal{O}(\sqrt{N})$ space complexity. QRAM requires $\mathcal{O}(N)$. This paper has a very nice list of references on QRAM. 
+
 * [Fault tolerant resource estimation of quantum random-access memories](https://arxiv.org/abs/1902.01329)
 
 * [Optimal usage of QRAM in quantum machine learning](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.012326)
@@ -80,12 +86,6 @@ More details of the implementation are provided in the next paper.
 * [Fundamental causal bounds of quantum random access memories](https://www.nature.com/articles/s41534-024-00848-3)
 
 * [Efficient and Error-Resilient Data Access Protocols for a Limited-Sized Quantum Random Access Memory](https://arxiv.org/abs/2303.05207)
-
-* [A QRAM using a polynomial encoding of binary strings](https://arxiv.org/abs/2408.16794)
-
-A quantum random access memory (QRAM) using a polynomial encoding of binary strings. Priyanka Mukhopadhyay. 2024. arXiv preprint.
-
-Presents a QRAM architecture in which the input address is first converted to a one-hot encoding using a fast $\mathcal{O}(\log \log N)$ T-depth circuit and then the memory can be read out by controlling on each qubit of this one-hot encoded register. The language of polynomials in this paper formalises this one-hot encoding idea. A quantum lookup table (aka QROM) idea is presented. The key differences are that the QROM circuit is not easily reconfigured when the stored memory is changed but rather has to be recompiled, and that it requires less space than a full QRAM. The way this quantum lookup table is implemented is by combining two of the polynomial QRAM architectures, with a hardcoded internal logic circuit. The first QRAM loads one of $\sqrt{N}$ chunks of data, each of $\sqrt{N}$ items and this split results in an $\mathcal{O}(\sqrt{N})$ space complexity. QRAM requires $\mathcal{O}(N)$ 
 
 * [Trainable PQC-Based QRAM for Quantum Storage](https://ieeexplore.ieee.org/abstract/document/10130283)
 
