@@ -73,19 +73,11 @@ Resource estimation of various quantum RAM proposals (including compiled circuit
 
 More about this work appears in the [PhD thesis](https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/1cc5585b-db87-42a4-8bc1-f71d857e211f/content) of the lead author. [Code](https://github.com/glassnotes/FT_qRAM_Circuits) associated with this work. 
 
-* [Optimal usage of QRAM in quantum machine learning](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.012326)
-
 * [Memory Compression with Quantum Random-Access Gates](https://arxiv.org/abs/2203.05599)
-
-* [Circuit-Based QRAM for Classical Data With Continuous Amplitudes](https://ieeexplore.ieee.org/abstract/document/9259210?casa_token=AVb77tRfT10AAAAA:tA5yZRDX5KSQ37OSY6rigKJPoSwuqxfOjpCdr0KzyYdB568lKck1ekJNqlvhE7jdJpBklonI)
-
-* [Data centers with QRAM and quantum networks](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.108.032610)
 
 * [Robust QRAM](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.010306)
 
 * [Parallelizing the queries in a bucket-brigade QRAM](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.102.032608)
-
-* [Quantum random access stored-program machines](https://www.sciencedirect.com/science/article/pii/S0022000022000599?casa_token=n_iI1fZUfTsAAAAA:ACv-YAhH5hHLYX81nxDkOlID3QVS2XxZtABd4FpBwp6JG2EogFclVAqdK0trGuKamVKBt4A34Q)
 
 * [Compact and classically preprocessed data-loading quantum circuit as a quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.012616)
 
@@ -93,15 +85,11 @@ More about this work appears in the [PhD thesis](https://dspacemainprd01.lib.uwa
 
 * [Efficient and Error-Resilient Data Access Protocols for a Limited-Sized Quantum Random Access Memory](https://arxiv.org/abs/2303.05207)
 
-* [Trainable PQC-Based QRAM for Quantum Storage](https://ieeexplore.ieee.org/abstract/document/10130283)
-
 * [Resource-efficient simulation of noisy quantum circuits and application to network-enabled QRAM optimization](https://www.nature.com/articles/s41534-023-00773-x)
 
 * [Multi-qubit time-bin quantum RAM](https://arxiv.org/abs/1412.2459)
 
 * [Novel oracle constructions for quantum random access memory](https://arxiv.org/abs/2405.20225)
-
-* [Small quantum computers and large classical data sets](https://arxiv.org/abs/2004.00026)
 
 ## Hardware 
 
@@ -127,13 +115,17 @@ More about this work appears in the [PhD thesis](https://dspacemainprd01.lib.uwa
 
 * [Quantum random access memory architectures using superconducting cavities](https://arxiv.org/abs/2310.08288)
 
-## Algorithms using QRAM
+## Algorithms that use QRAM, and other algorithmic aspects of QRAM
 
 * [Quantum algorithm for finding minimum values in a Quantum Random Access Memory](https://arxiv.org/abs/2301.05122)
 
 * [Quantum Linear Algorithm for Edit Distance Using the Word QRAM Model](https://arxiv.org/abs/2112.13005)
 
 * [Improved Classical and Quantum Algorithms for the Shortest Vector Problem via Bounded Distance Decoding](https://arxiv.org/abs/2002.07955)
+
+* [Optimal usage of QRAM in quantum machine learning](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.012326)
+
+* [Quantum random access stored-program machines](https://www.sciencedirect.com/science/article/pii/S0022000022000599?casa_token=n_iI1fZUfTsAAAAA:ACv-YAhH5hHLYX81nxDkOlID3QVS2XxZtABd4FpBwp6JG2EogFclVAqdK0trGuKamVKBt4A34Q)
 
 ## Talks
 
@@ -157,7 +149,15 @@ On QRAM. Joe Fitzsimons. 2019. Nisqy Business (Blog). 5 min read.
 
 * [QRAM in nlab](https://ncatlab.org/nlab/show/QRAM)
 
-## Other papers
+## Interesting papers in a similar theme
+
+* [Small quantum computers and large classical data sets](https://arxiv.org/abs/2004.00026)
+
+* [Trading T gates for dirty qubits in state preparation and unitary synthesis](https://quantum-journal.org/papers/q-2024-06-17-1375/)
+
+* [Unified Architecture for a Quantum Lookup Table](https://arxiv.org/abs/2406.18030)
+
+## Other papers on QRAM
 
 * [A novel efficient QRAM](https://ieeexplore.ieee.org/abstract/document/9568972)
 
@@ -167,3 +167,10 @@ Since the circuit loads one memory item, N iterations of it can be used to load 
 * [Circuit-based QRAM for Classical Data](https://www.nature.com/articles/s41598-019-40439-3.pdf)
 
 Quantum state preparation circuit that uses controlled rotation on an ancilla qubit and post-selection to get the right amplitudes. Presents a technique ("quantum forking") to compute the inner product of two states $U_1\ket{\psi}$ and $U_2\ket{\psi}$ given access to only one copy of $\ket{\psi}$.
+
+* [Circuit-Based QRAM for Classical Data With Continuous Amplitudes](https://ieeexplore.ieee.org/abstract/document/9259210?casa_token=AVb77tRfT10AAAAA:tA5yZRDX5KSQ37OSY6rigKJPoSwuqxfOjpCdr0KzyYdB568lKck1ekJNqlvhE7jdJpBklonI)
+
+* [Trainable PQC-Based QRAM for Quantum Storage](https://ieeexplore.ieee.org/abstract/document/10130283)
+
+* [Data centers with QRAM and quantum networks](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.108.032610)
+
