@@ -7,9 +7,9 @@ Feel free to create pull requests with suggestions. Accompanying descriptions to
 
 ## Reviews, overviews and surveys
 
-* [Quantum Random Access Memory for Dummies](https://www.mdpi.com/1424-8220/23/17/7462)
-
 * [QRAM: A Survey and Critique](https://arxiv.org/abs/2305.10310)
+
+* [Quantum Random Access Memory for Dummies](https://www.mdpi.com/1424-8220/23/17/7462)
 
 * [Quantum Memory: A Missing Piece in Quantum Computing Units](https://arxiv.org/abs/2309.14432)
 
@@ -21,7 +21,7 @@ Feel free to create pull requests with suggestions. Accompanying descriptions to
 
 Practicality of Quantum Random Access Memory. Connor Hann. 2021. 253 pages. 
 
-Contains complete example circuits for QRAM architectures. Analyses the noise-resilience of bucket-brigade QRAM in a setting where the components experience noise even in the "wait" state and finds that due to limited entanglement between components the infidelity only scales poly-logarithmically with the memory size. Proposes a hardware-efficient error suppression scheme not relying on quantum error correction, but as a result it can at most quadratically improve the error probability. Proposes experimental implementations of QRAM for hybrid quantum acoustic systems.
+Contains complete example circuits for QRAM architectures. Analyses the noise-resilience of bucket-brigade QRAM in a setting where the components experience noise even in the "wait" state and finds that due to limited entanglement between components the infidelity only scales poly-logarithmically with the memory size. Proposes a hardware-efficient error suppression scheme not relying on quantum error correction, but it can at most quadratically improve the error probability. Proposes experimental implementations of QRAM for hybrid quantum acoustic systems.
 
 ## Curated Papers
 
