@@ -65,7 +65,13 @@ A quantum random access memory (QRAM) using a polynomial encoding of binary stri
 
 Presents a QRAM architecture in which the input address is first converted to a one-hot encoding using a fast $\mathcal{O}(\log \log N)$ T-depth circuit and then the memory can be read out by controlling on each qubit of this one-hot encoded register. The language of polynomials in this paper formalises this one-hot encoding idea. A quantum lookup table (aka QROM) idea is presented. The key differences are that the QROM circuit is not easily reconfigured when the stored memory is changed but rather has to be recompiled, and that it requires less space than a full QRAM. The way this quantum lookup table is implemented is by combining two of the polynomial QRAM architectures, with a hardcoded internal logic circuit. The first QRAM loads one of $\sqrt{N}$ chunks of data, each of $\sqrt{N}$ items. The second QRAM loads the right item from these $\sqrt{N}$ items. This split results in an $\mathcal{O}(\sqrt{N})$ space complexity. QRAM requires $\mathcal{O}(N)$. This paper has a very nice list of references on QRAM. 
 
-* [Fault tolerant resource estimation of quantum random-access memories](https://arxiv.org/abs/1902.01329)
+* [Fault tolerant resource estimation of QRAM](https://arxiv.org/abs/1902.01329)
+
+Fault tolerant resource estimation of quantum random-access memories. Olivia Di Matteo et al. 2020. arXiv preprint. 
+
+Resource estimation of various quantum RAM proposals (including compiled circuits or "QROM") assuming a fully error corrected QRAM utilising the surface code. For millisecond query times to 8 GB memory, they estimate ~ $10^{15}$ physical qubits are required. This is about $10^5$ factor overhead on the number of bits in 8 GB ($6.4\times 10^{10}$ bits).
+
+More about this work appears in the [PhD thesis](https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/1cc5585b-db87-42a4-8bc1-f71d857e211f/content) of the lead author. [Code](https://github.com/glassnotes/FT_qRAM_Circuits) associated with this work. 
 
 * [Optimal usage of QRAM in quantum machine learning](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.012326)
 
