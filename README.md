@@ -161,6 +161,10 @@ On QRAM. Joe Fitzsimons. 2019. Nisqy Business (Blog). 5 min read.
 
 [Unified Architecture for a Quantum Lookup Table](https://arxiv.org/abs/2406.18030)
 
+[Encoding Electronic Spectra in Quantum Circuits with Linear T Complexity](https://journals.aps.org/prx/pdf/10.1103/PhysRevX.8.041015
+
+This paper introduces QROM.
+
 ## Other papers on QRAM
 
 [A novel efficient QRAM](https://ieeexplore.ieee.org/abstract/document/9568972)
