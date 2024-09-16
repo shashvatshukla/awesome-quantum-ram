@@ -79,27 +79,19 @@ A quantum random access memory (QRAM) using a polynomial encoding of binary stri
 
 Presents a QRAM architecture in which the input address is first converted to a one-hot encoding using a fast $\mathcal{O}(\log \log N)$ T-depth circuit and then the memory can be read out by controlling on each qubit of this one-hot encoded register. The language of polynomials in this paper formalises this one-hot encoding idea. A quantum lookup table (aka QROM) idea is presented. The key differences are that the QROM circuit is not easily reconfigured when the stored memory is changed but rather has to be recompiled, and that it requires less space than a full QRAM. The way this quantum lookup table is implemented is by combining two of the polynomial QRAM architectures, with a hardcoded internal logic circuit. The first QRAM loads one of $\sqrt{N}$ chunks of data, each of $\sqrt{N}$ items. The second QRAM loads the right item from these $\sqrt{N}$ items. This split results in an $\mathcal{O}(\sqrt{N})$ space complexity. QRAM requires $\mathcal{O}(N)$. This paper has a very nice list of references on QRAM. 
 
-[Memory Compression with Quantum Random-Access Gates](https://arxiv.org/abs/2203.05599)
-
 [Robust QRAM](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.010306)
-
-[Compact and classically preprocessed data-loading quantum circuit as a quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.012616)
-
-[Fundamental causal bounds of quantum random access memories](https://www.nature.com/articles/s41534-024-00848-3)
 
 [Efficient and Error-Resilient Data Access Protocols for a Limited-Sized Quantum Random Access Memory](https://arxiv.org/abs/2303.05207)
 
-[Resource-efficient simulation of noisy quantum circuits and application to network-enabled QRAM optimization](https://www.nature.com/articles/s41534-023-00773-x)
-
-[Multi-qubit time-bin quantum RAM](https://arxiv.org/abs/1412.2459)
-
 [Novel oracle constructions for quantum random access memory](https://arxiv.org/abs/2405.20225)
 
-## Hardware 
+## Hardware and Physics
 
 [Hardware-Efficient QRAM with Hybrid Quantum Acoustic Systems](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.250501)
 
 [Scalable and High-Fidelity Quantum Random Access Memory in Spin-Photon Networks](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.030319)
+
+[Resource-efficient simulation of noisy quantum circuits and application to network-enabled QRAM optimization](https://www.nature.com/articles/s41534-023-00773-x)
 
 [Rapid single flux QRAM](https://ieeexplore.ieee.org/abstract/document/403223?casa_token=nYXXUrQvaTwAAAAA:DIXlyXH0ajSuDimAgos3vZf1sFej-SR-Ng4wzJO-VUpGxHI2OhLRlpb4vHQL6I10Zr0TyLuN)
 
@@ -119,6 +111,8 @@ Presents a QRAM architecture in which the input address is first converted to a 
 
 [Quantum random access memory architectures using superconducting cavities](https://arxiv.org/abs/2310.08288)
 
+[Multi-qubit time-bin quantum RAM](https://arxiv.org/abs/1412.2459)
+
 ## Algorithms that use QRAM, and other algorithmic aspects of QRAM
 
 [Quantum algorithm for finding minimum values in a Quantum Random Access Memory](https://arxiv.org/abs/2301.05122)
@@ -130,6 +124,10 @@ Presents a QRAM architecture in which the input address is first converted to a 
 [Optimal usage of QRAM in quantum machine learning](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.012326)
 
 [Quantum random access stored-program machines](https://www.sciencedirect.com/science/article/pii/S0022000022000599?casa_token=n_iI1fZUfTsAAAAA:ACv-YAhH5hHLYX81nxDkOlID3QVS2XxZtABd4FpBwp6JG2EogFclVAqdK0trGuKamVKBt4A34Q)
+
+[Memory Compression with Quantum Random-Access Gates](https://arxiv.org/abs/2203.05599)
+
+[Fundamental causal bounds of quantum random access memories](https://www.nature.com/articles/s41534-024-00848-3)
 
 ## Talks
 
@@ -161,7 +159,7 @@ On QRAM. Joe Fitzsimons. 2019. Nisqy Business (Blog). 5 min read.
 
 [Unified Architecture for a Quantum Lookup Table](https://arxiv.org/abs/2406.18030)
 
-[Encoding Electronic Spectra in Quantum Circuits with Linear T Complexity](https://journals.aps.org/prx/pdf/10.1103/PhysRevX.8.041015
+[Encoding Electronic Spectra in Quantum Circuits with Linear T Complexity](https://journals.aps.org/prx/pdf/10.1103/PhysRevX.8.041015)
 
 This paper introduces QROM.
 
@@ -177,6 +175,9 @@ Since the circuit loads one memory item, N iterations of it can be used to load 
 Quantum state preparation circuit that uses controlled rotation on an ancilla qubit and post-selection to get the right amplitudes. Presents a technique ("quantum forking") to compute the inner product of two states $U_1\ket{\psi}$ and $U_2\ket{\psi}$ given access to only one copy of $\ket{\psi}$.
 
 [Circuit-Based QRAM for Classical Data With Continuous Amplitudes](https://ieeexplore.ieee.org/abstract/document/9259210?casa_token=AVb77tRfT10AAAAA:tA5yZRDX5KSQ37OSY6rigKJPoSwuqxfOjpCdr0KzyYdB568lKck1ekJNqlvhE7jdJpBklonI)
+
+[Compact and classically preprocessed data-loading quantum circuit as a quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.012616)
+
 
 [Trainable PQC-Based QRAM for Quantum Storage](https://ieeexplore.ieee.org/abstract/document/10130283)
 
