@@ -69,17 +69,13 @@ Quantum random access memory via quantum walk. Asaka et al. 2021. Quantum Sci Te
 
 Proposes a QRAM scheme which does not use a tree of quantum routers, switches or any kind of quantum device on the nodes of the tree. Rather, it is described in terms of classical logic done coherently on a register. A physical implementation is proposed in terms of dual-rail qubits (particles travelling along one of two paths). 
 (Note that this is not a quantum walk in the sense that a variant of Grover's algorithm or Amplitude Amplification is applied. Rather, the mathematical structure of how the intermediate steps of the addressing scheme work can be modelled as a walk - but so can any classical computation. I would advise not paying too much attention to the word "walk" as it confused me during my first read.)
-More details of the implementation are provided in the next paper. 
-
-[Two-level quantum walkers on directed graphs. II. Application to quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.107.022416)
+More details of the implementation are provided in [this follow up paper](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.107.022416). 
 
 [A QRAM using a polynomial encoding of binary strings](https://arxiv.org/abs/2408.16794)
 
 A quantum random access memory (QRAM) using a polynomial encoding of binary strings. Priyanka Mukhopadhyay. 2024. arXiv preprint.
 
 Presents a QRAM architecture in which the input address is first converted to a one-hot encoding using a fast $\mathcal{O}(\log \log N)$ T-depth circuit and then the memory can be read out by controlling on each qubit of this one-hot encoded register. The language of polynomials in this paper formalises this one-hot encoding idea. A quantum lookup table (aka QROM) idea is presented. The key differences are that the QROM circuit is not easily reconfigured when the stored memory is changed but rather has to be recompiled, and that it requires less space than a full QRAM. The way this quantum lookup table is implemented is by combining two of the polynomial QRAM architectures, with a hardcoded internal logic circuit. The first QRAM loads one of $\sqrt{N}$ chunks of data, each of $\sqrt{N}$ items. The second QRAM loads the right item from these $\sqrt{N}$ items. This split results in an $\mathcal{O}(\sqrt{N})$ space complexity. QRAM requires $\mathcal{O}(N)$. This paper has a very nice list of references on QRAM. 
-
-[Robust QRAM](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.010306)
 
 [Efficient and Error-Resilient Data Access Protocols for a Limited-Sized Quantum Random Access Memory](https://arxiv.org/abs/2303.05207)
 
@@ -112,6 +108,12 @@ Presents a QRAM architecture in which the input address is first converted to a 
 [Quantum random access memory architectures using superconducting cavities](https://arxiv.org/abs/2310.08288)
 
 [Multi-qubit time-bin quantum RAM](https://arxiv.org/abs/1412.2459)
+
+[Two-level quantum walkers on directed graphs. II. Application to quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.107.022416)
+
+[Robust QRAM](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.010306)
+
+One interesting idea in this paper is the suggestion that an architecture that changes the state of more router qubits is more prone to errors.
 
 ## Algorithms that use QRAM, and other algorithmic aspects of QRAM
 
