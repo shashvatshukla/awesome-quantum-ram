@@ -44,6 +44,21 @@ Points out a distinction between algorithms that take polylog (in N, memory size
 Argues that using quantum error correction causes the bucket-brigade architecture to lose its primary advantage of a small number of “active” gates, since
 all components have to be actively error corrected.
 Appeals to the work of Regev and Schiff on faulty oracles (which destroy Grover's search) and shows that QRAM acts as a faulty oracle in this sense. 
+The compilation of the Bucket Brigade Architecture presented in this paper has two notable features: (i) instead of routing a qubit to a specific location, it decodes the binary address to a unary or one-hot encoding; and (ii) the memory is stored in qubits, and thus Toffoli gates are needed to read it out. These choices have also influenced the next two papers below. Contrast this compilation with Page 39 of [Connor Hann's PhD Thesis](https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1345&context=gsas_dissertations). In this compilation, the qubit is actually routed to a location, and the data is stored in classical bits, and classically controlled operations are used to load it into quantum memory. 
+
+* [Fault tolerant resource estimation of QRAM](https://arxiv.org/abs/1902.01329)
+
+Fault tolerant resource estimation of quantum random-access memories. Olivia Di Matteo et al. 2020. arXiv preprint. 
+
+Resource estimation of various quantum RAM proposals (including compiled circuits or "QROM") assuming a fully error corrected QRAM utilising the surface code. For millisecond query times to 8 GB memory, they estimate ~ $10^{15}$ physical qubits are required. This is about $10^5$ factor overhead on the number of bits in 8 GB ($6.4\times 10^{10}$ bits).
+
+More about this work appears in the [PhD thesis](https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/1cc5585b-db87-42a4-8bc1-f71d857e211f/content) of the lead author. [Code](https://github.com/glassnotes/FT_qRAM_Circuits) associated with this work. 
+
+* [Parallelizing the queries in a bucket-brigade QRAM](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.102.032608)
+
+This paper works with surface code architectures and the Bucket-Brigade architecture in mind. It presents compilations of QRAM into the Clifford+T gate set. Presents a division of the QRAM circuit into three steps (FANOUT, QUERY, FANIN). The Query step has a long list of Toffoli operations that have to be done in sequence, because they all use the same qubit as the target qubit. The paper shows how this step can be parallelised (where commuting gates without intermediate operations are assumed to be parallel). 
+
+[Code](https://github.com/quantumresource/quantify) with this paper.
 
 * [Resilience of QRAM to Generic Noise](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.020311)
 
@@ -65,19 +80,9 @@ A quantum random access memory (QRAM) using a polynomial encoding of binary stri
 
 Presents a QRAM architecture in which the input address is first converted to a one-hot encoding using a fast $\mathcal{O}(\log \log N)$ T-depth circuit and then the memory can be read out by controlling on each qubit of this one-hot encoded register. The language of polynomials in this paper formalises this one-hot encoding idea. A quantum lookup table (aka QROM) idea is presented. The key differences are that the QROM circuit is not easily reconfigured when the stored memory is changed but rather has to be recompiled, and that it requires less space than a full QRAM. The way this quantum lookup table is implemented is by combining two of the polynomial QRAM architectures, with a hardcoded internal logic circuit. The first QRAM loads one of $\sqrt{N}$ chunks of data, each of $\sqrt{N}$ items. The second QRAM loads the right item from these $\sqrt{N}$ items. This split results in an $\mathcal{O}(\sqrt{N})$ space complexity. QRAM requires $\mathcal{O}(N)$. This paper has a very nice list of references on QRAM. 
 
-* [Fault tolerant resource estimation of QRAM](https://arxiv.org/abs/1902.01329)
-
-Fault tolerant resource estimation of quantum random-access memories. Olivia Di Matteo et al. 2020. arXiv preprint. 
-
-Resource estimation of various quantum RAM proposals (including compiled circuits or "QROM") assuming a fully error corrected QRAM utilising the surface code. For millisecond query times to 8 GB memory, they estimate ~ $10^{15}$ physical qubits are required. This is about $10^5$ factor overhead on the number of bits in 8 GB ($6.4\times 10^{10}$ bits).
-
-More about this work appears in the [PhD thesis](https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/1cc5585b-db87-42a4-8bc1-f71d857e211f/content) of the lead author. [Code](https://github.com/glassnotes/FT_qRAM_Circuits) associated with this work. 
-
 * [Memory Compression with Quantum Random-Access Gates](https://arxiv.org/abs/2203.05599)
 
 * [Robust QRAM](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.010306)
-
-* [Parallelizing the queries in a bucket-brigade QRAM](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.102.032608)
 
 * [Compact and classically preprocessed data-loading quantum circuit as a quantum random access memory](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.012616)
 
