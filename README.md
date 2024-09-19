@@ -9,6 +9,13 @@ Feel free to create pull requests with suggestions. Accompanying descriptions to
 
 [QRAM: A Survey and Critique](https://arxiv.org/abs/2305.10310)
 
+Points out a key difficulty in realising QRAM: that QRAM always has some cost scaling that is O(N), where N is the number of memory items stored in the QRAM. They survey various incarnations of this O(N) cost: classical controller hardware for QRAM implemented as a circuit, and energy costs for more physical QRAM proposals. In all cases they find the costs to be very large and not justified considering the opportunity cost of using all that O(N) compute or energy to deploy a massively parallel algorithm using classical CPUs or GPUs to solve the problem directly. 
+These arguments are reminiscent of infeasibility arguments for quadratic quantum speedups, or large scale quantum computing in general. 
+The two cruxes of these arguments are that the constant of the linear cost scaling is too large and that the problems we wish to solve are often massively parallelisable. 
+Another issue pointed out is the difficulty of interfacing QRAM and FTQC. Making QRAM error corrected leads to the O(N) cost problem. If QRAM is not corrected, then it needs very low error rates. QRAM needs to be transversal - which stabiliser codes can't have, but there might be esoteric codes. In general, some co-design of QEC and QRAM is needed as a way forward. 
+
+A [talk](https://www.youtube.com/watch?v=Wm2dowNOek4) about this paper very clearly explains the structure of the arguments. 
+
 [Quantum Random Access Memory for Dummies](https://www.mdpi.com/1424-8220/23/17/7462)
 
 [Quantum Memory: A Missing Piece in Quantum Computing Units](https://arxiv.org/abs/2309.14432)
