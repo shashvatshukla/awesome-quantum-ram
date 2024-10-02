@@ -126,7 +126,7 @@ One interesting idea in this paper is the suggestion that an architecture that c
 
 [Quantum algorithm for finding minimum values in a Quantum Random Access Memory](https://arxiv.org/abs/2301.05122)
 
-[Quantum Linear Algorithm for Edit Distance Using the Word QRAM Model](https://arxiv.org/abs/2112.13005)
+Durr-Hoyer minimum finding algorithm on a list of numbers stored in QRAM. 
 
 [Improved Classical and Quantum Algorithms for the Shortest Vector Problem via Bounded Distance Decoding](https://arxiv.org/abs/2002.07955)
 
